@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KariCraft</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body style="background-image: url(img/logo1.jpg)">
+		<div class="block_up">
+	<div class="block_logo" style="display: flex;
+	                               flex-direction: column;
+	                               justify-content: space-around;
+	                               background-color: #3AB090;">
+	<div class="block_logo1" style="text-align: center;
+			                        display: flex;
+			                        ">
+<a href="index.html" style="font-family: 'Press Start 2P', cursive;
+font-size: 20px;
+text-align: center;
+margin-bottom: 5px;">KARICRAFT</a>
+	</div>
+<div class="dropdown">
+  <button style="font-family: 'Press Start 2P', cursive;" onclick="myFunction()" class="dropbtn">Меню</button>
+  <div id="myDropdown" style="font-family: 'Press Start 2P', cursive;" class="dropdown-content">
+    <a href="index_info-team.html">Команда</a>
+    <a href="index_info-server.html">Инфо</a>
+    <a href="https://shop.karicraft.ru/">Донат</a>
+    <a href="index_info-dev.html">Моды</a>
+  </div>
+</div>
+	</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+ <div class="block_team-main">
+ <div class="comanda">
+  <font style="color:white;
+               font-size: 25px;">Наша команда:</font>
+</div>
+    <div class="main">
+      <div class="comanda2">
+        <font style="color:white;
+               font-size: 25px;">Создатели:</font>
+        </div>
+  <div class="Dev">
+<ul>
+    <li style="color:white;
+                 font-size: 20px;">SuperKardamo</font>
+    <li style="color:white;
+                 font-size: 18px;">MisterVladislav</li>
+</ul> 
+</div>
+       </div>
+  <div class="main2">
+    <div class="moder">
+      <font style="color:white;
+               font-size: 25px;">Модераторы:</font>
+    </div>
+    <div class="moder2">
+  <ul>
+    <li style="color:white;
+                 font-size: 20px;">Fotom4ik</li>
+    <li style="color:white;
+                 font-size: 20px;">GorikYT_</li>
+    <li style="color:white;
+                 font-size: 20px;">Mr.Dan</li>
+  </ul>
+    </div>
+       </div>
+  <div class="main3">
+    <div class="YT">
+      <p style="color:black">YouTube каналы команды:</p>
+         </div>
+              <div class="kan">
+    <ul>            
+      <li><a href="https://www.youtube.com/channel/UC9lMEn_CXFM4A7NYIn5ufuQ">MisterVladislav</a></li>
+      <li><a href="https://www.youtube.com/channel/UCOzgVzRybjwYiw5tGR2bf5g">SuperKardamo</a></li> 
+      <li><a href="https://www.youtube.com/channel/UCPiVkJoE9kcviwLSqZvMDCA">gorikPLAYYT</a></li>  
+      <li><a href="https://www.youtube.com/channel/UC5uaAc3ctLkDbzzbloSbb8Q">Mr.Dan</a>
+      <li><a href="https://www.youtube.com/channel/UC16rzuQ0naMzYWiezesOMeA">Fotom4ik</a>
+      </div>
+      </div>          
+</body>
+</html>

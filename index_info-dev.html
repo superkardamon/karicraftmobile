@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KariCraft</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-image: url(img/logo1.jpg)">
+		<div class="block_up">
+	<div class="block_logo" style="display: flex;
+	                               flex-direction: column;
+	                               justify-content: space-around;
+	                               background-color: #3AB090;">
+	<div class="block_logo1" style="text-align: center;
+			                        display: flex;
+			                        ">
+<a href="index.html" style="font-family: 'Press Start 2P', cursive;
+font-size: 20px;
+text-align: center;
+margin-bottom: 5px;">KARICRAFT</a>
+	</div>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Меню</button>
+  <div id="myDropdown" style="font-family: 'Press Start 2P', cursive;" class="dropdown-content">
+    <a href="index_info-team.html">Команда</a>
+    <a href="index_info-server.html">Инфо</a>
+    <a href="https://shop.karicraft.ru/">Донат</a>
+    <a href="index_info-dev.html">Моды</a>
+  </div>
+</div>
+	</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<div class="b_content_mods" class="background-color: white;">
+</div>
+</body>
+</html>
